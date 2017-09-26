@@ -36,7 +36,7 @@ It’s possible to pass parameters as a second argument.
 }) }}
 ```
 
-| Parameter      | Description                                          | Default |
-|----------------|------------------------------------------------------|---------|
-| cache          | Whether to cache the contents.                       | `true`  |
-| suppressErrors | Whether to suppress any PHP Notices/Warnings/Errors. | `true`  |
+| Parameter        | Description                                          | Default |
+|------------------|------------------------------------------------------|---------|
+| `cache`          | Whether to cache the contents.                       | `true`  |
+| `suppressErrors` | Whether to suppress any PHP Notices/Warnings/Errors. | `true`  |

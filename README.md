@@ -36,8 +36,7 @@ It’s possible to pass parameters as a second argument.
 }) }}
 ```
 
-| Parameter      | Description                                                                        |
-|----------------|------------------------------------------------------------------------------------|
-| array          | Whether to return the contents of the file as an array or not.                     |
-| cache          | Whether to cache the contents.                                                     |
-| suppressErrors | Whether to suppress any PHP Notices/Warnings/Errors (usually permissions related). |
+| Parameter      | Description                                                                        | Default |
+|----------------|------------------------------------------------------------------------------------|---------|
+| cache          | Whether to cache the contents.                                                     | `true`  |
+| suppressErrors | Whether to suppress any PHP Notices/Warnings/Errors (usually permissions related). | `true`  |

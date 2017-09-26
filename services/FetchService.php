@@ -26,7 +26,6 @@ class FetchService extends BaseApplicationComponent
     public function getFileContents($path, array $params = [])
     {
         $params = array_merge([
-            'array' => false,
             'cache' => true,
             'suppressErrors' => true,
         ], $params);

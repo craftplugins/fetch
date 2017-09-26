@@ -36,7 +36,7 @@ class FetchPlugin extends BasePlugin
      */
     public function getDescription()
     {
-        return Craft::t('file_get_contents for Craft CMS.');
+        return Craft::t('file_get_contents for Craft CMS templates.');
     }
 
     /**
@@ -44,7 +44,7 @@ class FetchPlugin extends BasePlugin
      */
     public function getDocumentationUrl()
     {
-        return 'https://github.com/joshuabaker/craft-fetch/fetch/blob/master/README.md';
+        return 'https://github.com/joshuabaker/craft-fetch/blob/master/README.md';
     }
 
     /**
@@ -52,7 +52,7 @@ class FetchPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/joshuabaker/craft-fetch/fetch/master/releases.json';
+        return 'https://raw.githubusercontent.com/joshuabaker/craft-fetch/master/releases.json';
     }
 
     /**

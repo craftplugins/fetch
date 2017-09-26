@@ -32,7 +32,7 @@ class FetchTwigExtension extends \Twig_Extension
     public function getFilters()
     {
         return [
-            'fetch' => new \Twig_Filter_Method($this, 'fetch'),
+            'fetch' => new \Twig_Filter_Method($this, 'getFileContents'),
         ];
     }
 
@@ -42,7 +42,7 @@ class FetchTwigExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            'fetch' => new \Twig_Function_Method($this, 'fetch'),
+            'fetch' => new \Twig_Function_Method($this, 'getFileContents'),
         ];
     }
 

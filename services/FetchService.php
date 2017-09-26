@@ -35,13 +35,21 @@ class FetchService extends BaseApplicationComponent
 
         $cacheKey = 'fetch'.$path;
 
-        if ($cache && craft()->cache->has($cacheKey)) {
-            return craft()->cache->get($cacheKey);
+        if ($cache) {
+            $contents = craft()->cache->get($cacheKey);
+
+            if ($contents !== false) {
+                return $contents;
+            }
         }
 
-        $contents = IOHelper::getFileContents($path, $array, $suppressErrors);
+        if ($suppressErrors) {
+            $contents = @file_get_contents($path);
+        } else {
+            $contents = file_get_contents($path);
+        }
 
-        if ($cache) {
+        if ($contents !== false && $cache) {
             craft()->cache->set($cacheKey, $contents);
         }
 

@@ -1,8 +1,8 @@
-<img src="https://cdn.rawgit.com/joshuabaker/craft-fetch/resources/icon.svg" width="72">
+<img src="https://rawgit.com/joshuabaker/craft-fetch/master/resources/icon.svg" width="72">
 
 # Fetch plugin for Craft CMS
 
-file_get_contents for Craft CMS templates.
+`file_get_contents` for Craft CMS templates.
 
 ## Usage
 
@@ -28,7 +28,7 @@ There’s three ways to use Fetch.
 
 ### Parameters
 
-It’s possible to pass parameters as a second argument to any of the above.
+It’s possible to pass parameters as a second argument.
 
 ```twig
 {{ fetch(svgAsset.url, {

@@ -48,6 +48,15 @@ class FetchService extends BaseApplicationComponent
             $contents = file_get_contents($path);
         }
 
+        // Attempt to decode as JSON
+        if (strpos($contents, '{') || strpos($contents, '[')) {
+            $json = json_decode($contents);
+
+            if (json_last_error() === JSON_ERROR_NONE) {
+                $contents = $json;
+            }
+        }
+
         if ($contents !== false && $cache) {
             craft()->cache->set($cacheKey, $contents);
         }

@@ -4,6 +4,8 @@
 
 `file_get_contents` for Craft CMS templates.
 
+Automatically decodes JSON.
+
 ## Usage
 
 There’s three ways to use Fetch.

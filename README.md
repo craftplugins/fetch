@@ -1,4 +1,8 @@
-<img src="https://rawgit.com/joshuabaker/craft-fetch/master/resources/icon.svg" width="72">
+> [!IMPORTANT]
+>
+> **This plugin is no longer maintained.**
+> 
+> We recommend using the (other) [Fetch plugin](https://plugins.craftcms.com/fetch) instead.
 
 # Fetch plugin for Craft CMS
 
